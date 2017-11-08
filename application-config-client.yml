@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active:
+      - dev
+
+---
+spring:
+  profiles: dev
+  application:
+    name: cnbiconfig-test-dev
+    
+---
+spring: 
+  profiles: default
+  application: cnbiconfig-test-default
