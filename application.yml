@@ -7,7 +7,7 @@ spring:
 spring:
   profiles: dev
   application:
-    name: cnbiconfig-test-dev
+    name: cnbiconfig-abc-dev
     
 ---
 spring: 
