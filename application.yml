@@ -11,5 +11,5 @@ spring:
     
 ---
 spring: 
-  profiles: 
+  profiles: default
   application: cnbiconfig-test-default
