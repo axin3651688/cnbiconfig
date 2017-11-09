@@ -23,7 +23,7 @@ spring:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://edmin:mldnjava@eureka-7001.com:7001/eureka
+      defaultZone: http://edmin:mldnjava@cnbigjx.eicp.net:36108/eureka,http://edmin:mldnjava@www.cnbisoft.com:7001/eureka
   instance:
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5 # 如果现在超过了5秒的间隔（默认是90秒）
@@ -47,11 +47,11 @@ mybatis:
 server:
   port: 8002
 spring:
-  profiles: beat
+  profiles: beta
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource    # 配置当前要使用的数据源的操作类型
     driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
-    url: jdbc:mysql://192.168.1.108:3306/mldn8001           # 数据库连接地址
+    url: jdbc:mysql://localhost:3306/mldn8002       # 数据库连接地址
     username: root                                  # 数据库用户名
     password: 1                            # 数据库连接密码
     dbcp2:                                          # 进行数据库连接池的配置
@@ -64,7 +64,7 @@ spring:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://edmin:mldnjava@eureka-7001.com:7001/eureka
+      defaultZone: http://edmin:mldnjava@cnbigjx.eicp.net:36108/eureka,http://edmin:mldnjava@www.cnbisoft.com:7001/eureka
   instance:
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5 # 如果现在超过了5秒的间隔（默认是90秒）
