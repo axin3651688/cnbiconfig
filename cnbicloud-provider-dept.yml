@@ -43,6 +43,7 @@ mybatis:
   mapper-locations:                                     # 所有的mapper映射文件
   - classpath:mybatis/mapper/**/*.xml
 
+  
 ---
 server:
   port: 8002
