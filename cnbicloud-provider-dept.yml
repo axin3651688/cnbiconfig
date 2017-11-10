@@ -23,11 +23,11 @@ spring:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://edmin:mldnjava@cnbigjx.eicp.net:36108/eureka,http://edmin:mldnjava@www.cnbisoft.com:7001/eureka
+      defaultZone: http://edmin:mldnjava@eureka118-7001.com/eureka,http://edmin:mldnjava@eureka108-7001.com:7001/eureka
   instance:
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5 # 如果现在超过了5秒的间隔（默认是90秒）
-    instance-id: dept-8001.com  # 在信息列表时显示主机名称
+    instance-id: dept118-8001.com  # 在信息列表时显示主机名称
     prefer-ip-address: true     # 当为true时,访问的路径变为IP地址
 
 info:
@@ -65,11 +65,11 @@ spring:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://edmin:mldnjava@cnbigjx.eicp.net:36108/eureka,http://edmin:mldnjava@www.cnbisoft.com:7001/eureka
+      defaultZone: http://edmin:mldnjava@eureka118-7001.com/eureka,http://edmin:mldnjava@eureka108-7001.com:7001/eureka
   instance:
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5 # 如果现在超过了5秒的间隔（默认是90秒）
-    instance-id: www.cnbisoft.com:8002  # 在信息列表时显示主机名称
+    instance-id: dept108-8002.com  # 在信息列表时显示主机名称
     prefer-ip-address: true     # 当为true时,访问的路径变为IP地址
 
 info:

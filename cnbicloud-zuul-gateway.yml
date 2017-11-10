@@ -38,17 +38,18 @@ security:
   user:
     name: zdmin
     password: mldnjava
-  instance:
-    lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
-    lease-expiration-duration-in-seconds: 5 # 如果现在超过了5秒的间隔（默认是90秒）
-    instance-id: cnbigjx.eicp.net:gateway-9501.com  # 在信息列表时显示主机名称
-    prefer-ip-address: true     # 访问的路径变为IP地址
-
 info:
   app.name: com-cnbicloud
   company.name: www.mldn.cn
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edmin:mldnjava@eureka118-7001.com/eureka,http://edmin:mldnjava@eureka108-7001.com:7001/eureka
+  instance:
+    prefer-ip-address: true     # 在地址栏上使用IP地址进行显示
+    instance-id: gateway118-9501.com
 ---
 spring:
   profiles: beta
@@ -85,14 +86,16 @@ security:
   user:
     name: zdmin
     password: mldnjava
-  instance:
-    lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
-    lease-expiration-duration-in-seconds: 5 # 如果现在超过了5秒的间隔（默认是90秒）
-    instance-id: www.cnbisoft.com:9501  # 在信息列表时显示主机名称
-    prefer-ip-address: true     # 访问的路径变为IP地址
 
 info:
   app.name: com-cnbicloud
   company.name: www.mldn.cn
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edmin:mldnjava@eureka118-7001.com/eureka,http://edmin:mldnjava@eureka108-7001.com:7001/eureka
+  instance:
+    prefer-ip-address: true     # 在地址栏上使用IP地址进行显示
+    instance-id: gateway118-9501.com  
