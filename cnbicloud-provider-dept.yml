@@ -23,7 +23,7 @@ spring:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://edmin:mldnjava@eureka118-7001.com:7001/eureka,http://edmin:mldnjava@eureka108-7001.com:7001/eureka
+      defaultZone: http://edmin:mldnjava@192.168.1.118:7001/eureka,http://edmin:mldnjava@192.168.1.108:7001/eureka
   instance:
     lease-renewal-interval-in-seconds: 30 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 30 # 如果现在超过了5秒的间隔（默认是90秒）
@@ -65,7 +65,7 @@ spring:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://edmin:mldnjava@eureka118-7001.com:7001/eureka,http://edmin:mldnjava@eureka108-7001.com:7001/eureka
+      defaultZone: http://edmin:mldnjava@192.168.1.118:7001/eureka,http://edmin:mldnjava@192.168.1.108:7001/eureka
   instance:
     lease-renewal-interval-in-seconds: 30 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 90 # 如果现在超过了5秒的间隔（默认是90秒）
