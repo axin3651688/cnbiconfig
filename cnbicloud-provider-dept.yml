@@ -40,7 +40,7 @@ info:
   company.name: www.cnbisoft.com.cn
   build.artifactId: $project.artifactId$
   build.version: $project.version$
-  version: 118
+  version: 11801
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml    # mybatis配置文件所在路径
@@ -87,7 +87,7 @@ info:
   company.name: www.cnbisoft.com.cn
   build.artifactId: $project.artifactId$
   build.version: $project.version$
-  version: 108
+  version: 10801
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml    # mybatis配置文件所在路径
