@@ -7,6 +7,11 @@ server:
   port: 8001
 spring:
   profiles: dev
+  rabbitmq:     # 现在将集成RabbitMQ作为消息服务总线处理
+    host: rabbitmq-server   #RabbitMQ主机服务地址
+    port: 5672     #RabbitMQ的监听端口
+    username: cnbigjx    #用户名
+    password: 123456    密码
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource    # 配置当前要使用的数据源的操作类型
     driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
@@ -48,7 +53,12 @@ mybatis:
 server:
   port: 8002
 spring:
-  profiles: beta
+  profiles: beta  
+  rabbitmq:     # 现在将集成RabbitMQ作为消息服务总线处理
+    host: 192.168.1.118   #RabbitMQ主机服务地址
+    port: 5672     #RabbitMQ的监听端口
+    username: cnbigjx    #用户名
+    password: 123456    密码  
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource    # 配置当前要使用的数据源的操作类型
     driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
