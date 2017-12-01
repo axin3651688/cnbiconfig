@@ -33,7 +33,7 @@ eureka:
     lease-renewal-interval-in-seconds: 5 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 8 # 如果现在超过了5秒的间隔（默认是90秒）
     instance-id: dept118-8001.com  # 在信息列表时显示主机名称
-    prefer-ip-address: true     # 当为true时,访问的路径变为IP地址
+    prefer-ip-address: true        # 当为true时,访问的路径变为IP地址
 
 info:
   app-name: dept
@@ -44,7 +44,7 @@ info:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml    # mybatis配置文件所在路径
-  type-aliases-package: org.cnbicloud.api.vo            # 定义所有操作类的别名所在包
+  type-aliases-package: com.cnbicloud.vo                # 定义所有操作类的别名所在包
   mapper-locations:                                     # 所有的mapper映射文件
   - classpath:mybatis/mapper/**/*.xml
 
@@ -91,6 +91,6 @@ info:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml    # mybatis配置文件所在路径
-  type-aliases-package: org.cnbicloud.api.vo           # 定义所有操作类的别名所在包
+  type-aliases-package: com.cnbicloud.vo           # 定义所有操作类的别名所在包
   mapper-locations:                                     # 所有的mapper映射文件
   - classpath:mybatis/mapper/**/*.xml
