@@ -40,7 +40,7 @@ info:
   company-name: www.cnbisoft.com.cn
   build-artifactId: $project.artifactId$
   app-version: $project.version$
-  version: 1181
+  version: gjx118
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml    # mybatis配置文件所在路径
