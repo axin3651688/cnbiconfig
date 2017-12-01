@@ -58,7 +58,7 @@ spring:
     host: 192.168.1.118   #RabbitMQ主机服务地址
     port: 5672     #RabbitMQ的监听端口
     username: cnbigjx    #用户名
-    password: 123456    #密码  
+    password: 123456     #密码是这样子的吗  
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource    # 配置当前要使用的数据源的操作类型
     driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
