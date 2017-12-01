@@ -1,3 +1,6 @@
+mybatis
+  name: gjx@cnbisoft.com
+  age: 100
 spring:
   profiles:
     active:
@@ -5,6 +8,7 @@ spring:
 ---
 spring:
   profiles: dev
+  gjx: axin3651688
   application:
     name: cnbiconfig-abc-dev
     
