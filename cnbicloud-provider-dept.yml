@@ -39,7 +39,7 @@ info:
   app-name: dept
   company-name: www.cnbisoft.com.cn
   build-artifactId: $project.artifactId$
-  build-version: $project.version$
+  app-version: $project.version$
   version: 11802
 
 mybatis:
@@ -86,7 +86,7 @@ info:
   app-name: dept
   company-name: www.cnbisoft.com.cn
   build-artifactId: $project.artifactId$
-  build-version: $project.version$
+  app-version: $project.version$
   version: 10802
 
 mybatis:
