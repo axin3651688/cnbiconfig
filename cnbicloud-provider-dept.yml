@@ -36,10 +36,10 @@ eureka:
     prefer-ip-address: true     # 当为true时,访问的路径变为IP地址
 
 info:
-  app.name: dept
-  company.name: www.cnbisoft.com.cn
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+  app-name: dept
+  company-name: www.cnbisoft.com.cn
+  build-artifactId: $project.artifactId$
+  build-version: $project.version$
   version: 11802
 
 mybatis:
@@ -83,10 +83,10 @@ eureka:
     prefer-ip-address: true     # 当为true时,访问的路径变为IP地址
 
 info:
-  app.name: dept
-  company.name: www.cnbisoft.com.cn
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+  app-name: dept
+  company-name: www.cnbisoft.com.cn
+  build-artifactId: $project.artifactId$
+  build-version: $project.version$
   version: 10802
 
 mybatis:
