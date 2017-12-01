@@ -1,3 +1,6 @@
+mybatis
+  name: gjx@cnbisoft.com
+  age: 100
 spring:
   profiles:
     active:
