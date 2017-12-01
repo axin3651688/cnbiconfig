@@ -5,7 +5,7 @@ spring:
 ---
 spring:
   profiles: dev
-  gjx: luluaxin3651688
+  gjx: lulu_axin3651688
   application:
     name: cnbiconfig-abc-dev
     
