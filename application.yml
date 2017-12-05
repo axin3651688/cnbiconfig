@@ -2,23 +2,12 @@ spring:
   profiles:
     active:
       - dev
-
-eureka: # 一定要编写一个eureka的地址
-  instance:
-    lease-renewal-interval-in-seconds: 5 # 设置心跳的时间间隔（默认是30秒）
-    lease-expiration-duration-in-seconds: 8 # 如果现在超过了8秒的间隔（默认是90秒）
-    prefer-ip-address: true
-
-
-
-	
 ---
 spring:
   profiles: dev
   eureka-zone: http://edmin:mldnjava@192.168.1.118:7001/eureka,http://edmin:mldnjava@192.168.1.108:7001/eureka
   application:
-    name: cnbiconfig-abc-dev
-    
+    name: cnbiconfig-abc-dev  
 ---
 spring: 
   profiles: default
