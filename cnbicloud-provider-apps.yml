@@ -18,7 +18,7 @@ spring:
         cache: false   
     datasource: 
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://192.168.1.108:3306/security_test
+        url: jdbc:mysql://192.168.1.108:3306/security_api
         username: root
         password: 1
         #platform: all
