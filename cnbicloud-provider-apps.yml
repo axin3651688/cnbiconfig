@@ -10,7 +10,9 @@ server:
  # context-path: /sec
   port: 82
 spring:
-    profiles: dev
+    profiles: dev 
+    application:
+        name: cnbicloud-user-app  
     thymeleaf: 
         mode: HTML5
         encoding: UTF-8
