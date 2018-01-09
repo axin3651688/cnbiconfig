@@ -12,7 +12,7 @@ server:
 spring:
     profiles: dev 
     application:
-        name: cnbicloud-user-app  
+        name: cnbicloud-provider-user
     thymeleaf: 
         mode: HTML5
         encoding: UTF-8
