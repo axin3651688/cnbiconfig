@@ -23,15 +23,26 @@ zuul:
   AuthorizedRequestFilter: 
     pre: 
       disable: false
-  prefix: /cnbi-proxy
+  #prefix: /cnbi-proxy
   ignored-services:
     "*"
-  routes: 
+  #routes: 
     #cnbicloud-provider-company: /company-proxy/** 
-    cnbicloud-provider-dept: /dept-proxy/**
-    cnbicloud-provider-user: /user-proxy/**
+    #cnbicloud-provider-dept: /dept-proxy/**
+    #cnbicloud-provider-user: /user-proxy/**
     #cnbicloud-provider-upload: /upload-proxy/**
-    
+  routes:
+    cnbicloud-provider-dept:
+      path: /dept/**
+      serviceId: cnbicloud-provider-dept
+      stripPrefix: false
+      sensitiveHeaders:  
+  routes:
+    cnbicloud-provider-user:
+      path: /user/**
+      serviceId: cnbicloud-provider-user
+      stripPrefix: false
+      sensitiveHeaders:  
 # zuul代理的安全认证
 security:
   basic:
