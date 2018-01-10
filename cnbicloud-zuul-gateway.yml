@@ -33,16 +33,17 @@ zuul:
     #cnbicloud-provider-upload: /upload-proxy/**
   routes:
     cnbicloud-provider-dept:
-      path: /dept/**
-      serviceId: cnbicloud-provider-dept
-      stripPrefix: false
-      sensitiveHeaders:  
-  routes:
+        path: /dept/**
+        serviceId: cnbicloud-provider-dept
+        stripPrefix: false
+        sensitiveHeaders:  
+
     cnbicloud-provider-user:
-      path: /user/**
-      serviceId: cnbicloud-provider-user
-      stripPrefix: false
-      sensitiveHeaders:  
+        path: /user/**
+        serviceId: cnbicloud-provider-user
+        stripPrefix: false
+        sensitiveHeaders:  
+
 # zuul代理的安全认证
 security:
   basic:
@@ -93,16 +94,16 @@ zuul:
     #cnbicloud-provider-upload: /upload-proxy/**
   routes:
     cnbicloud-provider-dept:
-      path: /dept/**
-      serviceId: cnbicloud-provider-dept
-      stripPrefix: false
-      sensitiveHeaders:  
-  routes:
+        path: /dept/**
+        serviceId: cnbicloud-provider-dept
+        stripPrefix: false
+        sensitiveHeaders:  
+
     cnbicloud-provider-user:
-      path: /user/**
-      serviceId: cnbicloud-provider-user
-      stripPrefix: false
-      sensitiveHeaders:  
+        path: /user/**
+        serviceId: cnbicloud-provider-user
+        stripPrefix: false
+        sensitiveHeaders:  
 # zuul代理的安全认证
 security:
   basic:
