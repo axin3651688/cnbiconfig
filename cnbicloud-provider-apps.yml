@@ -20,7 +20,7 @@ spring:
         cache: false   
     datasource: 
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://192.168.1.108:3306/security_api3
+        url: jdbc:mysql://192.168.1.108:3306/security_api2
         username: root
         password: 1
         #platform: all
